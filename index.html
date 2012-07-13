@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<title>Responsive Tables</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+</head>
+<body>
+	<h1>Responsive Tables</h1>
+	<p>by <a href="http://www.twitter.com/GregorTerrill">@GregorTerrill</a></p>
+
+	<a href="https://github.com/gregorterrill/ResponsiveTables"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+	<p>This jQuery script applies column headers to each sub-item at a pre-defined breakpoint, allowing more data to be displayed on mobile devices with a limited screen width.</p>
+	<p>This demo uses <a href="https://github.com/louisremi/jquery-smartresize/">debounced window resizing</a> by <a href="http://www.twitter.com/louis_remi/">@louis_remi</a> to decrease the frequency of resize events across different browsers. 
+	<p>Each table that is to be made responsive requires the class name <em>responsiveTable</em>. Tables need to be properly scoped in order for the color swapping to function correctly.</p>
+	<p>The default breakpoint is 500px.</p>
+	<p>Resize the browser window to see the change occur.</p>
+
+	<table class="responsiveTable">
+		<caption>Number of Yearly Events Requiring Additional Funding</caption>
+		<thead>
+			<tr>
+				<td></td>
+				<th scope="col" id="C1">2008 - 09</th>
+				<th scope="col" id="C2">2009 - 10</th>
+				<th scope="col" id="C3">2010 - 11</th>
+				<th scope="col" id="C4">2011 - 12</th>
+				<th scope="col" id="C5">2012 - 13</th>
+				<th scope="col" id="C6">2013 - 14</th>
+				<th scope="col" id="C7">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th colspan="8" scope="rowgroup" id="G1">Mandatory Yearly Events</td>
+			</tr>
+			<tr>
+				<th scope="row" id="R1">Resource Management Soirees in the Sub-Saharan Party Zone</th>
+				<td headers="C1 G1 R1">4</td>
+				<td headers="C2 G1 R1">6</td>
+				<td headers="C3 G1 R1">2</td>
+				<td headers="C4 G1 R1">8</td>
+				<td headers="C5 G1 R1">6</td>
+				<td headers="C6 G1 R1">7</td>
+				<td headers="C7 G1 R1">33</td>
+			</tr>
+			<tr>
+				<th scope="row" id="R2">Marginalized Animal Species Benefits for the Siberian Zoo</th>
+				<td headers="C1 G1 R2">2</td>
+				<td headers="C2 G1 R2">4</td>
+				<td headers="C3 G1 R2">6</td>
+				<td headers="C4 G1 R2">4</td>
+				<td headers="C5 G1 R2">2</td>
+				<td headers="C6 G1 R2">6</td>
+				<td headers="C7 G1 R2">24</td>
+			</tr>
+			<tr>
+				<th scope="row" id="R3">Gallery Openings for Underappreciated Fringe Artists</th>
+				<td headers="C1 G1 R3">1</td>
+				<td headers="C2 G1 R3">1</td>
+				<td headers="C3 G1 R3">6</td>
+				<td headers="C4 G1 R3">8</td>
+				<td headers="C5 G1 R3">6</td>
+				<td headers="C6 G1 R3">6</td>
+				<td headers="C7 G1 R3">28</td>
+			</tr>
+			<tr>
+				<th colspan="8" scope="rowgroup" id="G2">Unforeseen Dinners and Other Meals</td>
+			</tr>
+			<tr>
+				<th scope="row" id="R4">International Finger-Food Sampling Lunch Galas</th>
+				<td headers="C1 G2 R4">3</td>
+				<td headers="C2 G2 R4">5</td>
+				<td headers="C3 G2 R4">6</td>
+				<td headers="C4 G2 R4">2</td>
+				<td headers="C5 G2 R4">8</td>
+				<td headers="C6 G2 R4">2</td>
+				<td headers="C7 G2 R4">26</td>
+			</tr>
+			<tr>
+				<th scope="row" id="R5">NASCAR Barbeques for Visiting American Diplomats</th>
+				<td headers="C1 G2 R5">1</td>
+				<td headers="C2 G2 R5">2</td>
+				<td headers="C3 G2 R5">6</td>
+				<td headers="C4 G2 R5">4</td>
+				<td headers="C5 G2 R5">2</td>
+				<td headers="C6 G2 R5">1</td>
+				<td headers="C7 G2 R5">16</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="js/debouncedresize.js"></script>
+<script src="js/responsivetables.js"></script>
+
+</body>
+</html>

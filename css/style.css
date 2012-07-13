@@ -1,0 +1,88 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: auto;
+}
+table {
+  width: 80%;
+  margin: auto;
+  font-size: 10.5px;
+  border-collapse: collapse;
+}
+table caption {
+  border: 1px solid #8c8468;
+  border-bottom: none;
+  font-weight: bold;
+  color: #dbdab7;
+  font-size: 1.3em;
+  font-variant: small-caps;
+  text-align: left;
+  background: #6f6852;
+  padding: 10px;
+}
+table thead {
+  background: #8c8468;
+  font-weight: bold;
+}
+table thead td,
+table thead th {
+  border: 1px solid #8c8468;
+  text-align: right;
+  padding: 4px 10px;
+}
+table tbody td,
+table tbody th {
+  border: 1px solid #8c8468;
+  text-align: right;
+  padding: 4px 10px;
+  background-color: #dbdab7;
+}
+table tbody th[scope="rowGroup"] {
+  background-color: #c4c49c;
+  text-align: left;
+}
+table tbody th[scope="rowGroup"].altColor {
+  background-color: #6f6852;
+  color: #dbdab7;
+}
+table tbody th[scope="row"] {
+  text-align: left;
+  font-weight: normal;
+  padding-left: 18px;
+  background-color: #c4c49c;
+}
+table tbody .itemDescRow th {
+  background-color: #8c8468;
+  text-align: left;
+  font-weight: normal;
+}
+table tbody .itemColHeaders th {
+  background-color: #c4c49c;
+}
+h1,
+p {
+  margin-left: 10%;
+}
+h1 {
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: #6f6852;
+}
+a:visited {
+  color: #6f6852;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #8c8468;
+  text-decoration: underline;
+}
+p {
+  width: 80%;
+  max-width: 660px;
+  font-size: 0.875em;
+  line-height: 1.4em;
+  margin-top: 0;
+}

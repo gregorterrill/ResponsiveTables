@@ -1,0 +1,95 @@
+body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	width:100%;
+	margin:auto;
+}
+
+// COLORS
+@heavy: #6f6852; //#BBB;
+@med: #8C8468; //#DDD;
+@light: #C4C49C; //#EEE;
+@cell: #DBDAB7; //#FFF;
+@border: #8C8468; //#CCC;
+
+// TABLE STYLES
+table {
+	width: 80%;
+	margin:auto;
+	font-size: 10.5px;
+	border-collapse: collapse;
+
+	caption {
+		border: 1px solid @border;
+		border-bottom: none;
+		font-weight: bold;
+		color: @cell;
+		font-size:1.3em;
+		font-variant:small-caps;
+		text-align: left;
+		background: @heavy;
+		padding: 10px;
+	}
+	thead {
+		background: @med;
+		font-weight: bold;
+
+		td,th {
+			border: 1px solid @border;
+			text-align:right;
+			padding: 4px 10px;
+		}
+	}
+	tbody {
+
+		td,th {
+			border: 1px solid @border;
+			text-align:right;
+			padding: 4px 10px;
+			background-color: @cell;
+		}
+
+		//subsections
+		th[scope="rowGroup"] {
+			background-color: @light;
+			text-align:left;
+		}
+		th[scope="rowGroup"].altColor {
+			background-color: @heavy; 
+			color: @cell;
+		}	
+
+		//items
+		th[scope="row"] {
+			text-align: left;
+			font-weight:normal;
+			padding-left:18px;
+			background-color: @light;
+		}
+
+		.itemDescRow th {
+			background-color:@med;
+			text-align:left;
+			font-weight:normal;
+		}
+		.itemColHeaders th {background-color: @light;}
+
+	}
+}
+
+// TYPOGRAPHY
+h1, p {margin-left:10%;}
+h1 {margin-bottom:0;}
+a {
+	text-decoration:none;
+	color:@heavy;
+
+	&:visited {color:@heavy;}
+	&:hover, &:active, &:focus {color:@med; text-decoration:underline;}
+}
+p {
+	width:80%;
+	max-width:660px;
+	font-size:0.875em;
+	line-height:1.4em;
+	margin-top:0;
+}
